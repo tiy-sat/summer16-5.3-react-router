@@ -1,3 +1,13 @@
 /*
   Main Stylesheet
 */
+
+.image {
+  width: 400px;
+  height: 400px;
+  background-color: grey;
+}
+
+.image--liked {
+  background-color: red;
+}

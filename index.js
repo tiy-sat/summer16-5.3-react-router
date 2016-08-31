@@ -1,7 +1,12 @@
 import React from 'react'
 import { render } from 'react-dom'
-import Main from './lib/main'
+import { Router, Route, hashHistory } from 'react-router'
+import Feed from './lib/Feed'
+import Profile from './lib/Profile'
 
 render((
-  <Main name="Boilerplate"/>
+  <Router history={ hashHistory }>
+    <Route path="/" component={ Feed } />
+    <Route path="/profile/:username" component={ Profile } />
+  </Router>
 ), document.getElementById('app'))
